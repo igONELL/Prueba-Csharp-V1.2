@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "pruebaIgor/1.0.0": {
+        "dependencies": {
+          "EO.WebBrowser": "20.1.45"
+        },
+        "runtime": {
+          "pruebaIgor.dll": {}
+        }
+      },
+      "EO.WebBrowser/20.1.45": {
+        "runtime": {
+          "lib/EO.Base.dll": {
+            "assemblyVersion": "20.1.45.0",
+            "fileVersion": "20.1.45.0"
+          },
+          "lib/EO.WebBrowser.dll": {
+            "assemblyVersion": "20.1.45.0",
+            "fileVersion": "20.1.45.0"
+          },
+          "lib/EO.WebEngine.dll": {
+            "assemblyVersion": "20.1.45.0",
+            "fileVersion": "20.1.45.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "pruebaIgor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EO.WebBrowser/20.1.45": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Lzf5QksM+rVa25qyK7M2R54NXyDp0e+2JtNvImdV6C+LDUiaqMQmGKX/mOKumQAzY8OH2/GcQpE1VUrsR+BOXg==",
+      "path": "eo.webbrowser/20.1.45",
+      "hashPath": "eo.webbrowser.20.1.45.nupkg.sha512"
+    }
+  }
+}

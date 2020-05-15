@@ -1,0 +1,119 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "EO.WebBrowser/20.1.45": {
+        "type": "package",
+        "compile": {
+          "lib/EO.Base.dll": {},
+          "lib/EO.WebBrowser.dll": {},
+          "lib/EO.WebEngine.dll": {}
+        },
+        "runtime": {
+          "lib/EO.Base.dll": {},
+          "lib/EO.WebBrowser.dll": {},
+          "lib/EO.WebEngine.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EO.WebBrowser/20.1.45": {
+      "sha512": "Lzf5QksM+rVa25qyK7M2R54NXyDp0e+2JtNvImdV6C+LDUiaqMQmGKX/mOKumQAzY8OH2/GcQpE1VUrsR+BOXg==",
+      "type": "package",
+      "path": "eo.webbrowser/20.1.45",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "eo.webbrowser.20.1.45.nupkg.sha512",
+        "eo.webbrowser.nuspec",
+        "lib/EO.Base.dll",
+        "lib/EO.Base.xml",
+        "lib/EO.WebBrowser.dll",
+        "lib/EO.WebBrowser.xml",
+        "lib/EO.WebEngine.dll",
+        "lib/EO.WebEngine.xml",
+        "lib/GACTools.exe",
+        "lib/eowp.exe"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "EO.WebBrowser >= 20.1.45"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Igor\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Igor\\source\\repos\\pruebaIgor\\pruebaIgor.csproj",
+      "projectName": "pruebaIgor",
+      "projectPath": "C:\\Users\\Igor\\source\\repos\\pruebaIgor\\pruebaIgor.csproj",
+      "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Igor\\source\\repos\\pruebaIgor\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "EO.WebBrowser": {
+            "target": "Package",
+            "version": "[20.1.45, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"EO.WebBrowser 20.1.45\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "EO.WebBrowser",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

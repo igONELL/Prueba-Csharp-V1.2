@@ -1,0 +1,17 @@
+C:\Users\Igor\source\repos\pruebaIgor\bin\Debug\netcoreapp3.1\pruebaIgor.exe
+C:\Users\Igor\source\repos\pruebaIgor\bin\Debug\netcoreapp3.1\pruebaIgor.deps.json
+C:\Users\Igor\source\repos\pruebaIgor\bin\Debug\netcoreapp3.1\pruebaIgor.runtimeconfig.json
+C:\Users\Igor\source\repos\pruebaIgor\bin\Debug\netcoreapp3.1\pruebaIgor.runtimeconfig.dev.json
+C:\Users\Igor\source\repos\pruebaIgor\bin\Debug\netcoreapp3.1\pruebaIgor.dll
+C:\Users\Igor\source\repos\pruebaIgor\bin\Debug\netcoreapp3.1\pruebaIgor.pdb
+C:\Users\Igor\source\repos\pruebaIgor\obj\Debug\netcoreapp3.1\pruebaIgor.csprojAssemblyReference.cache
+C:\Users\Igor\source\repos\pruebaIgor\obj\Debug\netcoreapp3.1\pruebaIgor.AssemblyInfoInputs.cache
+C:\Users\Igor\source\repos\pruebaIgor\obj\Debug\netcoreapp3.1\pruebaIgor.AssemblyInfo.cs
+C:\Users\Igor\source\repos\pruebaIgor\obj\Debug\netcoreapp3.1\pruebaIgor.dll
+C:\Users\Igor\source\repos\pruebaIgor\obj\Debug\netcoreapp3.1\pruebaIgor.pdb
+C:\Users\Igor\source\repos\pruebaIgor\obj\Debug\netcoreapp3.1\pruebaIgor.genruntimeconfig.cache
+C:\Users\Igor\source\repos\pruebaIgor\obj\Debug\netcoreapp3.1\pruebaIgor.csproj.CoreCompileInputs.cache
+C:\Users\Igor\source\repos\pruebaIgor\bin\Debug\netcoreapp3.1\EO.Base.dll
+C:\Users\Igor\source\repos\pruebaIgor\bin\Debug\netcoreapp3.1\EO.WebBrowser.dll
+C:\Users\Igor\source\repos\pruebaIgor\bin\Debug\netcoreapp3.1\EO.WebEngine.dll
+C:\Users\Igor\source\repos\pruebaIgor\obj\Debug\netcoreapp3.1\pruebaIgor.csproj.CopyComplete
