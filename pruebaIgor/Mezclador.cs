@@ -8,7 +8,8 @@ namespace pruebaIgor
     {
         private string _tipo;
 
-        public Mezclador(float estadoComponente, string tipo ) : base(estadoComponente)
+        public Mezclador(float estadoComponente, string tipo ) 
+                        : base(estadoComponente)
         {
             _tipo = tipo;    
         }

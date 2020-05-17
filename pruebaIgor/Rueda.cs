@@ -11,7 +11,9 @@ namespace pruebaIgor
         private int _menorDurometro;
         private int _mayorDurometro;
 
-        public Rueda(float estadoComponente, string recubrimiento, int menorDurometro, int mayorDurometro ) : base(estadoComponente) {
+        public Rueda(float estadoComponente, string recubrimiento, 
+                    int menorDurometro, int mayorDurometro ) 
+                    : base(estadoComponente) {
 
             //El durómetro es un rango entre un número menor entero y un número mayor entero.
             //Ej. 100 – 180.

@@ -11,8 +11,13 @@ namespace pruebaIgor
         private float _ano;
         private float _kilometraje;
 
-        public Automovil(Estanque estanque, Mezclador mezclador, Rueda rueda, Motor motor, string marca, float ano, float kilometraje) : base(estanque, mezclador, rueda, motor)
-        {
+        public Automovil(Estanque estanque, Mezclador mezclador, 
+                        Rueda rueda, Motor motor, string marca, 
+                        float ano, float kilometraje) 
+                        : base(estanque, mezclador, rueda, motor)
+        
+        { 
+       
             _marca = marca;
             _ano = ano;
             _kilometraje = kilometraje;

@@ -14,7 +14,8 @@ namespace pruebaIgor
         //private Rueda[] _rueda; se utiliza solo para array 
         private Motor _motor;
 
-        protected Vehiculo(Estanque estanque, Mezclador mezclador, Rueda rueda, Motor motor)
+        protected Vehiculo(Estanque estanque, Mezclador mezclador, 
+                    Rueda rueda, Motor motor)
 
         {
             _estanque = estanque;
