@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Runtime.CompilerServices;
 using System.Threading;
 
 namespace pruebaIgor
@@ -83,14 +84,24 @@ namespace pruebaIgor
                             /*---------- Motor ----------*/
                             Console.Write("\nIngrese el estado del motor puede ser entre (0,0 a 100,0):------->    ");
                             float nuevoMotorEstado = float.Parse(Console.ReadLine());
-                            Console.WriteLine("\nIngrese los tiempos del motor “DOS_TIEMPOS” o “CUATRO_TIEMPOS”:    ");
+                            while (nuevoMotorEstado <= 0 || nuevoMotorEstado >= 100)
+                            {
+                                Console.Write("Vuelva a escribir el estado del motor puede ser entre (0,0 a 100,0):------->    ");
+                                nuevoMotorEstado = float.Parse(Console.ReadLine());
+                            }
+                            Console.Write("\nIngrese los tiempos del motor DOS_TIEMPOS o CUATRO_TIEMPOS:------->     ");
                             string nuevoTiempos = Console.ReadLine();
+                            while (!(nuevoTiempos.Equals("DOS_TIEMPOS") || nuevoTiempos.Equals("CUATRO_TIEMPOS")))
+                            {
+                                Console.Write("Vuelva a escribir si son DOS_TIEMPOS o CUATRO_TIEMPOS:------->    ");
+                                nuevoTiempos = Console.ReadLine();
+                            }
                             Console.Write("\nIngrese el ID numerico del motor:------->    ");
                             float nuevoId = float.Parse(Console.ReadLine());
                             Console.Write("\nIngrese el tipo motor:------->    ");
                             string nuevoTipoMotor = Console.ReadLine();
                             Console.Write("\nIngrese la cilindrada:------->    ");
-                            float nuevoCilindrada = float.Parse(Console.ReadLine());
+                            float nuevoCilindrada = float.Parse(Console.ReadLine());                            
                             nuevoMotor = new Motor(nuevoMotorEstado, nuevoId, 
                                                     nuevoTipoMotor, nuevoCilindrada, nuevoTiempos);//<--Creando objeto
 
@@ -98,14 +109,29 @@ namespace pruebaIgor
                             /*---------- Mezclador ----------*/
                             Console.Write("\nIngrese el estado del mezclador puede ser entre (0,0 a 100,0):------->    ");
                             float nuevoEstado = float.Parse(Console.ReadLine());
+                            while (nuevoEstado <= 0 || nuevoEstado >= 100)
+                            {
+                                Console.Write("Vuelva a escribir el estado del motor puede ser entre (0,0 a 100,0):------->    ");
+                                nuevoEstado = float.Parse(Console.ReadLine());
+                            }
                             Console.Write("\nIngrese El tipo de Mezclador (Carburador o Inyector):------->    ");
                             string nuevoTipo = Console.ReadLine();
+                            while (!(nuevoTipo.Equals("Carburador") || nuevoTipo.Equals("Inyector")))
+                            {
+                                Console.Write("Vuelva a escribir si son Carburador o Inyector:------->   ");
+                                nuevoTipo = Console.ReadLine();
+                            }
                             nuevoMezclador = new Mezclador(nuevoEstado, nuevoTipo);
 
 
                             /*---------- Estanque ----------*/
                             Console.Write("\nIngrese el estado estanque puede ser entre (0,0 a 100,0):------->     ");
                             float autoEstanque = float.Parse(Console.ReadLine());
+                            while (autoEstanque <= 0 || autoEstanque >= 100)
+                            {
+                                Console.Write("Vuelva a escribir el estado del motor puede ser entre (0,0 a 100,0):------->    ");
+                                autoEstanque = float.Parse(Console.ReadLine());
+                            }
                             Console.Write("\nCapacidad del estanque:------->    ");
                             float capacidadEstanque = float.Parse(Console.ReadLine());
                             Console.Write("\nCantidad de litros en el estanque:------->    ");
@@ -116,9 +142,18 @@ namespace pruebaIgor
                             /*---------- Rueda ----------*/
                             Console.Write("\nIngrese el estado de las ruedas puede ser entre (0,0 a 100,0):------->    ");
                             float nuevoRuedas = float.Parse(Console.ReadLine());
-                            Console.Write("\nSu rueda puede tener recubrimiento (FENOL, HULE o POLIUTERANO).");
-                            Console.Write("\nIngrese el recubrimiento de las 4 ruedas que tendra su vehiculo:------->    ");
+                            while (nuevoRuedas <= 0 || nuevoRuedas >= 100)
+                            {
+                                Console.Write("Vuelva a escribir el estado del motor puede ser entre (0,0 a 100,0):------->    ");
+                                nuevoRuedas = float.Parse(Console.ReadLine());
+                            }
+                            Console.Write("\nSu rueda puede tener recubrimiento (FENOL, HULE o POLIUTERANO):------->    ");
                             string nuevoRecubrimiento = Console.ReadLine();
+                            while (!(nuevoRecubrimiento.Equals ("FENOL") || nuevoRecubrimiento.Equals ("HULE") || nuevoRecubrimiento.Equals ("POLIUTERANO")))
+                            {
+                                Console.Write("Vuelva a escribir si es recubrimiento FENOL, HULE o POLIUTERANO:------->    ");
+                                nuevoRecubrimiento = Console.ReadLine();
+                            }
                             Console.Write("\nIngrese el primer rango de dureza del neumatico:------->    ");
                             int nuevoDurometroMen = int.Parse(Console.ReadLine());
                             Console.Write("\nIngrese el segundo rango de dureza del neumatico:------->    ");
@@ -166,6 +201,18 @@ namespace pruebaIgor
                                 Console.WriteLine("Estado de los componenetes:    " + v.Estanque.EstadoComponente);
                                 Console.WriteLine("Capacidad del estanque:    " + v.Estanque.Capacidad);
                                 Console.WriteLine("\nCantidad de litros en el estanque:    " + v.Estanque.Litros);
+                                    if (v.Estanque.BajoCombustible())
+                                        {
+                                            Console.WriteLine("----->  bajo del 10.5%");
+                                        }
+                                        else if (v.Estanque.MitadCombustible())
+                                        {
+                                            Console.WriteLine("----->  entre el 10.5% y el 50%");
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("----->  encima del 50%");
+                                        }
 
                                 /*---------- Rueda ----------*/
                                 Console.WriteLine("Estado de los componenetes:    " + v.Rueda.EstadoComponente);
@@ -178,9 +225,6 @@ namespace pruebaIgor
                                 Console.WriteLine("Año del automovil:    " + v.Ano);
                                 Console.WriteLine("Kilometraje del automovil:    " + v.Kilometraje);
                             }
-
-                            Console.WriteLine("chaolovimoh");
-
                             break;
 
                         case 3:
@@ -188,30 +232,23 @@ namespace pruebaIgor
 
                             break;
 
+                        case 0:
+                            Console.WriteLine("Se ha cerrado la sesion");
+                            break;
 
-                            /*----------------- FIN MENU -----------------*/
-
+                        default:
+                            Console.WriteLine("Opcion no incluida, vuelva a digitar");
+                            break;
                     }
-                } while ( menu != 0 );
-                
+                    /*----------------- FIN MENU -----------------*/
 
-
-                    /* [20:02] SEBASTIAN IGNACIO LOPEZ MUÑOZ
-                      Define una variable de tipo ArrayList y ponele un nombre, 
-                      por ejemplo arrayVehiculos
-                     la instancias con new ArrayList();
-                     y cada vez que creas un objeto vehiculo, lo guardas dentro 
-                     del arraylist usando el método Add
-                      algo asi como arrayVehiculos.Add(miVehiculo);
-                     miVehiculo seria algo asi como Automovil miVehiculo = new Automovil();*/
-
-
+                } while (!( menu == 0 ));
                     Console.ReadKey();
             }
 
             catch (Exception)
             {
-                Console.WriteLine("OpenWrite() failed");
+                Console.WriteLine("\nFinalizado\n");
             }
         }
     }
